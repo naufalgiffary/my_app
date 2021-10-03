@@ -4,13 +4,15 @@ import '../drawer.dart';
 import '../home_card.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
   var myDesire = "Amaterasu";
-  TextEditingController _desireController = TextEditingController();
+  final TextEditingController _desireController = TextEditingController();
 
   @override
   void initState() {
@@ -38,7 +40,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      drawer: appDrawer(),
+      drawer: const AppDrawer(),
       floatingActionButton: FloatingActionButton(
           onPressed: () {
             myDesire = _desireController.text;

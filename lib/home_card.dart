@@ -22,19 +22,19 @@ class HomeCard extends StatelessWidget {
           const SizedBox(height: 20),
           Text(
             myDesire,
-            style: TextStyle(
+            style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
                 color: Colors.orange),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
                 controller: _desireController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     hintText: "What is your desire?",
                     labelText: "Dream",
                     border: OutlineInputBorder())),
